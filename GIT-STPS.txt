@@ -1,0 +1,355 @@
+echo "# chalimidi3" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/gvnaresshuser/chalimidi3.git
+git push -u origin main
+
+
+git remote add origin https://github.com/gvnaresshuser/chalimidi3.git
+git branch -M main
+git push -u origin main
+
+-------------------------------------------------
+Deploy to Netlify
+
+After the code is on GitHub:
+
+Log in to Netlify.
+Click Add new site → Import an existing project.
+Choose GitHub.
+Select chalimidi3.
+Since this is a static HTML/CSS/JS website:
+Build command: (leave blank)
+Publish directory: . (or leave as the root if prompted)
+Click Deploy site.
+
+Your website will be live in a minute or two, and every future git push will automatically trigger a new deployment on Netlify.
+-------------------------------------------------
+
+
+Microsoft Windows [Version 10.0.26100.8246]
+(c) Microsoft Corporation. All rights reserved.
+
+E:\HTML-TEMPLATES\chalimid-3>git init
+Initialized empty Git repository in E:/HTML-TEMPLATES/chalimid-3/.git/
+
+E:\HTML-TEMPLATES\chalimid-3>git add .
+warning: in the working copy of '.gitattributes', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'css/animate.min.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'css/bootstrap-datetimepicker.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'css/bootstrap-select.min.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'css/bootstrap.min.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'css/colors/moderate-green.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'css/colors/orange.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'css/colors/strong-blue.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'css/colors/vivid-yellow.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'css/flaticon.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'css/font-awesome.min.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'css/normalize.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'css/owl.carousel.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'css/owl.theme.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'css/responsive.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'css/slick.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'css/style.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'fonts/Flaticon.svg', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'fonts/fontawesome-webfont.svg', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'fonts/glyphicons-halflings-regular.svg', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'index copy.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'js/all.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'js/bootstrap.min.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'js/custom.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'js/modernizer.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'mail.php', LF will be replaced by CRLF the next time Git touches it
+
+E:\HTML-TEMPLATES\chalimid-3>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .gitattributes
+        new file:   README.md
+        new file:   about.html
+        new file:   blog.html
+        new file:   contact.html
+        new file:   css/animate.min.css
+        new file:   css/bootstrap-datetimepicker.css
+        new file:   css/bootstrap-select.min.css
+        new file:   css/bootstrap.min.css
+        new file:   css/colors/moderate-green.css
+        new file:   css/colors/orange.css
+        new file:   css/colors/strong-blue.css
+        new file:   css/colors/vivid-yellow.css
+        new file:   css/flaticon.css
+        new file:   css/font-awesome.min.css
+        new file:   css/normalize.css
+        new file:   css/owl.carousel.css
+        new file:   css/owl.theme.css
+        new file:   css/responsive.css
+        new file:   css/slick.css
+        new file:   css/style.css
+        new file:   cssx/map.css
+        new file:   cssx/mycss.css
+        new file:   cssx/products.css
+        new file:   fonts/Flaticon.eot
+        new file:   fonts/Flaticon.svg
+        new file:   fonts/Flaticon.ttf
+        new file:   fonts/Flaticon.woff
+        new file:   fonts/FontAwesome.otf
+        new file:   fonts/fontawesome-webfont.eot
+        new file:   fonts/fontawesome-webfont.svg
+        new file:   fonts/fontawesome-webfont.ttf
+        new file:   fonts/fontawesome-webfont.woff
+        new file:   fonts/fontawesome-webfont.woff2
+        new file:   fonts/glyphicons-halflings-regular.eot
+        new file:   fonts/glyphicons-halflings-regular.svg
+        new file:   fonts/glyphicons-halflings-regular.ttf
+        new file:   fonts/glyphicons-halflings-regular.woff
+        new file:   fonts/glyphicons-halflings-regular.woff2
+        new file:   fonts/nautilus-webfont.woff
+        new file:   fonts/nautilus-webfont.woff2
+        new file:   gallery.html
+        new file:   images/about-inset.jpg
+        new file:   images/about-main.jpg
+        new file:   images/back.png
+        new file:   images/back_hover.png
+        new file:   images/banner.jpg
+        new file:   images/blog_bg.jpg
+        new file:   images/catering-icon.png
+        new file:   images/coffee.png
+        new file:   images/favicon.ico
+        new file:   images/featured-image-01.jpg
+        new file:   images/featured-image-02.jpg
+        new file:   images/featured-image-03.jpg
+        new file:   images/featured-image-04.jpg
+        new file:   images/food.png
+        new file:   images/footer_background.jpg
+        new file:   images/full-bg.png
+        new file:   images/gallery_01.jpg
+        new file:   images/gallery_02.jpg
+        new file:   images/gallery_03.jpg
+        new file:   images/gallery_04.jpg
+        new file:   images/gallery_05.jpg
+        new file:   images/gallery_06.jpg
+        new file:   images/gallery_07.jpg
+        new file:   images/gallery_08.jpg
+        new file:   images/gallery_09.jpg
+        new file:   images/gallery_10.jpg
+        new file:   images/icon_top.png
+        new file:   images/loader-animation.gif
+        new file:   images/logo.png
+        new file:   images/logo2.png
+        new file:   images/logo3.png
+        new file:   images/logo4.png
+        new file:   images/logox.png
+        new file:   images/menu-item-thumbnail-01.jpg
+        new file:   images/menu-item-thumbnail-02.jpg
+        new file:   images/menu-item-thumbnail-03.jpg
+        new file:   images/menu-item-thumbnail-04.jpg
+        new file:   images/menu-item-thumbnail-05.jpg
+        new file:   images/menu-item-thumbnail-06.jpg
+        new file:   images/menu-item-thumbnail-07.jpg
+        new file:   images/menu-item-thumbnail-08.jpg
+        new file:   images/menu-item-thumbnail-09.jpg
+        new file:   images/menu-item-thumbnail-10.jpg
+        new file:   images/newsletter-bg.jpg
+        new file:   images/next.png
+        new file:   images/next_hover.png
+        new file:   images/special-menu-1.jpg
+        new file:   images/special-menu-2.jpg
+        new file:   images/special-menu-3.jpg
+        new file:   images/special_menu_bg.jpg
+        new file:   images/staff-01.jpg
+        new file:   images/staff-02.jpg
+        new file:   images/staff-03.jpg
+        new file:   images/store.png
+        new file:   images/team_bg.jpg
+        new file:   imagesx/favicon.ico
+        new file:   imagesx/hero.jpg
+        new file:   imagesx/logo.png
+        new file:   imagesx/namkeen/jantikalu.jpg
+        new file:   imagesx/namkeen/kaju-mixture.jpg
+        new file:   imagesx/namkeen/kharam-bundhi.jpg
+        new file:   imagesx/shop.jpg
+        new file:   imagesx/sweets/bellam-sunnundalu.jpg
+        new file:   imagesx/sweets/boondi-laddu.jpg
+        new file:   imagesx/sweets/dry-fruit-laddu.jpg
+        new file:   imagesx/sweets/kaju-katli.jpg
+        new file:   imagesx/sweets/mysore-pak.jpg
+        new file:   imagesx/sweets/palli-laddu.jpg
+        new file:   index copy.html
+        new file:   index.html
+        new file:   js/all.js
+        new file:   js/bootstrap.min.js
+        new file:   js/custom.js
+        new file:   js/modernizer.js
+        new file:   jsx/app.js
+        new file:   jsx/cart.js
+        new file:   jsx/config.js
+        new file:   jsx/data.js
+        new file:   jsx/products.js
+        new file:   jsx/whatsapp.js
+        new file:   mail.php
+        new file:   menu.html
+        new file:   pricing.html
+        new file:   products copy.html
+        new file:   products.html
+        new file:   reservation.html
+        new file:   team.html
+
+
+E:\HTML-TEMPLATES\chalimid-3>git commit -m "first commit"
+[master (root-commit) 9f6045f] first commit
+ 129 files changed, 33563 insertions(+)
+ create mode 100644 .gitattributes
+ create mode 100644 README.md
+ create mode 100644 about.html
+ create mode 100644 blog.html
+ create mode 100644 contact.html
+ create mode 100644 css/animate.min.css
+ create mode 100644 css/bootstrap-datetimepicker.css
+ create mode 100644 css/bootstrap-select.min.css
+ create mode 100644 css/bootstrap.min.css
+ create mode 100644 css/colors/moderate-green.css
+ create mode 100644 css/colors/orange.css
+ create mode 100644 css/colors/strong-blue.css
+ create mode 100644 css/colors/vivid-yellow.css
+ create mode 100644 css/flaticon.css
+ create mode 100644 css/font-awesome.min.css
+ create mode 100644 css/normalize.css
+ create mode 100644 css/owl.carousel.css
+ create mode 100644 css/owl.theme.css
+ create mode 100644 css/responsive.css
+ create mode 100644 css/slick.css
+ create mode 100644 css/style.css
+ create mode 100644 cssx/map.css
+ create mode 100644 cssx/mycss.css
+ create mode 100644 cssx/products.css
+ create mode 100644 fonts/Flaticon.eot
+ create mode 100644 fonts/Flaticon.svg
+ create mode 100644 fonts/Flaticon.ttf
+ create mode 100644 fonts/Flaticon.woff
+ create mode 100644 fonts/FontAwesome.otf
+ create mode 100644 fonts/fontawesome-webfont.eot
+ create mode 100644 fonts/fontawesome-webfont.svg
+ create mode 100644 fonts/fontawesome-webfont.ttf
+ create mode 100644 fonts/fontawesome-webfont.woff
+ create mode 100644 fonts/fontawesome-webfont.woff2
+ create mode 100644 fonts/glyphicons-halflings-regular.eot
+ create mode 100644 fonts/glyphicons-halflings-regular.svg
+ create mode 100644 fonts/glyphicons-halflings-regular.ttf
+ create mode 100644 fonts/glyphicons-halflings-regular.woff
+ create mode 100644 fonts/glyphicons-halflings-regular.woff2
+ create mode 100644 fonts/nautilus-webfont.woff
+ create mode 100644 fonts/nautilus-webfont.woff2
+ create mode 100644 gallery.html
+ create mode 100644 images/about-inset.jpg
+ create mode 100644 images/about-main.jpg
+ create mode 100644 images/back.png
+ create mode 100644 images/back_hover.png
+ create mode 100644 images/banner.jpg
+ create mode 100644 images/blog_bg.jpg
+ create mode 100644 images/catering-icon.png
+ create mode 100644 images/coffee.png
+ create mode 100644 images/favicon.ico
+ create mode 100644 images/featured-image-01.jpg
+ create mode 100644 images/featured-image-02.jpg
+ create mode 100644 images/featured-image-03.jpg
+ create mode 100644 images/featured-image-04.jpg
+ create mode 100644 images/food.png
+ create mode 100644 images/footer_background.jpg
+ create mode 100644 images/full-bg.png
+ create mode 100644 images/gallery_01.jpg
+ create mode 100644 images/gallery_02.jpg
+ create mode 100644 images/gallery_03.jpg
+ create mode 100644 images/gallery_04.jpg
+ create mode 100644 images/gallery_05.jpg
+ create mode 100644 images/gallery_06.jpg
+ create mode 100644 images/gallery_07.jpg
+ create mode 100644 images/gallery_08.jpg
+ create mode 100644 images/gallery_09.jpg
+ create mode 100644 images/gallery_10.jpg
+ create mode 100644 images/icon_top.png
+ create mode 100644 images/loader-animation.gif
+ create mode 100644 images/logo.png
+ create mode 100644 images/logo2.png
+ create mode 100644 images/logo3.png
+ create mode 100644 images/logo4.png
+ create mode 100644 images/logox.png
+ create mode 100644 images/menu-item-thumbnail-01.jpg
+ create mode 100644 images/menu-item-thumbnail-02.jpg
+ create mode 100644 images/menu-item-thumbnail-03.jpg
+ create mode 100644 images/menu-item-thumbnail-04.jpg
+ create mode 100644 images/menu-item-thumbnail-05.jpg
+ create mode 100644 images/menu-item-thumbnail-06.jpg
+ create mode 100644 images/menu-item-thumbnail-07.jpg
+ create mode 100644 images/menu-item-thumbnail-08.jpg
+ create mode 100644 images/menu-item-thumbnail-09.jpg
+ create mode 100644 images/menu-item-thumbnail-10.jpg
+ create mode 100644 images/newsletter-bg.jpg
+ create mode 100644 images/next.png
+ create mode 100644 images/next_hover.png
+ create mode 100644 images/special-menu-1.jpg
+ create mode 100644 images/special-menu-2.jpg
+ create mode 100644 images/special-menu-3.jpg
+ create mode 100644 images/special_menu_bg.jpg
+ create mode 100644 images/staff-01.jpg
+ create mode 100644 images/staff-02.jpg
+ create mode 100644 images/staff-03.jpg
+ create mode 100644 images/store.png
+ create mode 100644 images/team_bg.jpg
+ create mode 100644 imagesx/favicon.ico
+ create mode 100644 imagesx/hero.jpg
+ create mode 100644 imagesx/logo.png
+ create mode 100644 imagesx/namkeen/jantikalu.jpg
+ create mode 100644 imagesx/namkeen/kaju-mixture.jpg
+ create mode 100644 imagesx/namkeen/kharam-bundhi.jpg
+ create mode 100644 imagesx/shop.jpg
+ create mode 100644 imagesx/sweets/bellam-sunnundalu.jpg
+ create mode 100644 imagesx/sweets/boondi-laddu.jpg
+ create mode 100644 imagesx/sweets/dry-fruit-laddu.jpg
+ create mode 100644 imagesx/sweets/kaju-katli.jpg
+ create mode 100644 imagesx/sweets/mysore-pak.jpg
+ create mode 100644 imagesx/sweets/palli-laddu.jpg
+ create mode 100644 index copy.html
+ create mode 100644 index.html
+ create mode 100644 js/all.js
+ create mode 100644 js/bootstrap.min.js
+ create mode 100644 js/custom.js
+ create mode 100644 js/modernizer.js
+ create mode 100644 jsx/app.js
+ create mode 100644 jsx/cart.js
+ create mode 100644 jsx/config.js
+ create mode 100644 jsx/data.js
+ create mode 100644 jsx/products.js
+ create mode 100644 jsx/whatsapp.js
+ create mode 100644 mail.php
+ create mode 100644 menu.html
+ create mode 100644 pricing.html
+ create mode 100644 products copy.html
+ create mode 100644 products.html
+ create mode 100644 reservation.html
+ create mode 100644 team.html
+
+E:\HTML-TEMPLATES\chalimid-3>git branch -M main
+
+E:\HTML-TEMPLATES\chalimid-3>git remote add origin https://github.com/gvnaresshuser/chalimidi3.git
+
+E:\HTML-TEMPLATES\chalimid-3>git push -u origin main
+Enumerating objects: 139, done.
+Counting objects: 100% (139/139), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (137/137), done.
+Writing objects: 100% (139/139), 13.93 MiB | 1024.00 KiB/s, done.
+Total 139 (delta 16), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (16/16), done.
+To https://github.com/gvnaresshuser/chalimidi3.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+E:\HTML-TEMPLATES\chalimid-3>

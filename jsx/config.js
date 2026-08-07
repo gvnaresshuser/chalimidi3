@@ -10,7 +10,7 @@ Application Configuration
 const CONFIG = {
   SHOP_NAME: "CHALIMIDI SWEETS",
 
-  SHOP_PHONE: "919949570732",
+  SHOP_PHONE: "918688793991",
 
   SHOP_EMAIL: "bdfoods2025@gmail.com",
 
