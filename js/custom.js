@@ -208,7 +208,7 @@
     return false;
   });
   // Color Skins
-  $(".switcher").click(function () {
+  /*  $(".switcher").click(function () {
 	console.log('INSIDE SWITCHER');
     var title = jQuery(this).attr("title");
     jQuery("#changeable-colors").attr("href", "css/colors/" + title + ".css");
@@ -236,6 +236,27 @@
   jQuery(".vivid-yellow-bg").on("click", function () {
     jQuery(".logo-header img").attr("src", "images/logox.png");
     jQuery(".footer-logo .text-center img").attr("src", "images/logox.png");
+    return false;
+  }); */
+  // ==================================================
+  // COLOR SKINS
+  // ==================================================
+
+  $(".switcher").click(function () {
+    console.log("INSIDE SWITCHER");
+
+    var title = $(this).attr("title");
+
+    // Change color CSS
+    $("#changeable-colors").attr("href", "css/colors/" + title + ".css");
+
+    // Save selected color
+    localStorage.setItem("selectedColor", title);
+
+    // Change logo
+    $(".logo-header img").attr("src", "images/logox.png");
+    $(".footer-logo .text-center img").attr("src", "images/logox.png");
+
     return false;
   });
 
@@ -322,4 +343,24 @@
       return false;
     });
   });
+  //----------------------- ADDED FOR COLOR SKINS --------------------------------
+  // ==================================================
+  // RESTORE SAVED COLOR
+  // ==================================================
+
+  $(document).ready(function () {
+    var savedColor = localStorage.getItem("selectedColor");
+
+    if (savedColor) {
+      console.log("Restoring saved color:", savedColor);
+
+      // Apply saved color CSS
+      $("#changeable-colors").attr("href", "css/colors/" + savedColor + ".css");
+
+      // Apply logo
+      $(".logo-header img").attr("src", "images/logox.png");
+      $(".footer-logo .text-center img").attr("src", "images/logox.png");
+    }
+  });
+  //-------------------------------------------------------
 })(jQuery);
