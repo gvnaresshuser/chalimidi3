@@ -262,3 +262,10 @@ window.addEventListener("scroll", () => {
   cartSummary.classList.add("hidden");
 
 });
+
+document.querySelectorAll("#navbar a").forEach((link) => {
+  link.addEventListener("click", () => {
+    // Close mobile menu
+    $("#navbar").collapse("hide");
+  });
+});

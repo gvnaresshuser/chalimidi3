@@ -385,404 +385,91 @@ header {
 SHOPPING CART
 
 ================================= */
-/* =================================================
-   CART PANEL
-================================================= */
 
 .cart-panel {
     position: fixed;
-    top: 65px;
+    top: 70px;
     right: 20px;
     width: 340px;
-    height: calc(100vh - 90px);
-    background: #fff;
-    border: 1px solid #E5D5C5;
-    border-radius: 16px;
-    padding: 14px;
-    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.18);
+    height: 90vh;
+    background: white;
+    border: 1px solid red;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, .18);
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
-    overflow: hidden;
 }
 
+.cart-panel h2 {
+    /* margin-bottom: 20px; */
+    color: #5D4037;
+}
 
-/* =================================================
-   CART HEADER
-================================================= */
+.cart-panel h3 {
+    border: 1px solid red;
+}
+
+#cartItems {
+    flex: 1;
+    overflow-y: auto;
+    margin: 15px 0;
+    padding-right: 8px;
+}
+
+ .cart-item {
+     background: #FFF8F0;
+     /* border: 1px solid #F3DFC8; */
+    border: 1px solid red;
+     border-radius: 12px;
+     padding: 16px;
+     margin-bottom: 15px;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, .06);
+     transition: .3s;
+ }
+
+.cart-item strong {
+    display: block;
+}
+
+#cartTotal {
+    color: #E67E22;
+}
 
 .cart-panel-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    margin: 0 0 6px 0;
-
-    flex-shrink: 0;
+    margin-top: -12px;
+    margin-bottom: 2px;
 }
 
 .cart-panel-header h2 {
     margin: 0;
-    font-size: 1.8rem;
-    /* line-height: 1.2; */
+    font-size: 1.5rem;
+    /* adjust if required */
     color: #5D4037;
 }
 
 
-/* =================================================
-   CLOSE BUTTON
-================================================= */
 
 .close-cart-btn {
-    width: 32px;
-    height: 32px;
-
+    width: 36px;
+    height: 36px;
     border: none;
     border-radius: 50%;
-
     background: #F5F5F5;
     color: #666;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     cursor: pointer;
-
-    transition: 0.3s;
-
-    flex-shrink: 0;
+    transition: .3s;
 }
 
 .close-cart-btn:hover {
     background: #E67E22;
     color: #fff;
-}
-
-
-/* =================================================
-   CART ITEMS
-   --> THIS GETS MOST OF THE AVAILABLE HEIGHT
-================================================= */
-
-#cartItems {
-    flex: 1;
-    /*
-       Very important when using flexbox.
-       Allows this section to shrink and scroll.
-    */
-    min-height: 0;
-    overflow-y: auto;
-    overflow-x: hidden;
-    margin: 6px 0;
-    padding-right: 6px;
-    -webkit-overflow-scrolling: touch;
-}
-
-
-/* =================================================
-   CART ITEM
-================================================= */
-.cart-item {
-    background: #FFF8F0;
-    /* border: 1px solid #F3DFC8; */
-    border: 1px solid red;
-    border-radius: 10px;
-    padding: 5px 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-    margin-bottom: 5px;
-    line-height: 2.2rem;
-}
-
-
-/* Product title + trash icon */
-
-.cart-item-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    /* margin-bottom: 2px; */
-}
-
-.cart-item-title strong {
-    display: block;
-    font-size: 1.5rem;
-    line-height: 1.2;
-    color: #5D4037;
-    /*
-       Allows long product names to use available space
-       without pushing the trash icon outside.
-    */
-    flex: 1;
-    min-width: 0;
-    padding-right: 8px;
-}
-
-
-/* Quantity */
-
-.cart-item small {
-    display: block;
-    font-size: 1.52rem;
-    color: #777;
-    margin-bottom: 2px;
-}
-
-
-/* Price */
-
-.cart-item-price {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #E67E22;
-}
-
-
-/* Trash icon */
-
-.remove-btn {
-    width: 26px;
-    height: 26px;
-    flex-shrink: 0;
-    padding: 0;
-    border: none;
-    border-radius: 50%;
-    background: transparent;
-    color: #999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: 0.25s;
-}
-
-.remove-btn:hover {
-    background: #FDECEA;
-    color: #D9534F;
-
-    transform: scale(1.08);
-}
-
-.remove-btn i {
-    font-size: 1.8rem;
-}
-
-/* =================================================
-   SCROLLBAR
-================================================= */
-
-#cartItems::-webkit-scrollbar {
-    width: 6px;
-}
-
-#cartItems::-webkit-scrollbar-track {
-    background: #f5f5f5;
-    border-radius: 10px;
-}
-
-#cartItems::-webkit-scrollbar-thumb {
-    background: #ccc;
-    border-radius: 10px;
-}
-
-#cartItems::-webkit-scrollbar-thumb:hover {
-    background: #aaa;
-}
-
-
-/* =================================================
-   HORIZONTAL LINES
-================================================= */
-
-.cart-panel>hr {
-    width: 100%;
-    margin: 5px 0;
-    border: none;
-    border-top: 1px solid #eee;
-    flex-shrink: 0;
-}
-
-
-/* =================================================
-   TOTAL
-================================================= */
-
-/* .cart-panel h3 {
-    padding: 0;
-    font-size: 1.8rem;
-    color: #5D4037;
-    border: none;
-    flex-shrink: 0;
-    
-} */
-
-#cartTotal {
-    color: #E67E22;
-    font-size: 1.1rem;
-    font-weight: 700;
-}
-
-/* ================================================
-   GRAND TOTAL
-================================================ */
-
-.cart-grand-total {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-   
-    /* padding: 10px 12px; */
-    padding-top: 2px;
-        padding-bottom: 2px;
-    padding-left:15px;
-    padding-right: 15px;
-    background: #FFF8F0;
-    /* border: 1px solid #F3DFC8; */
-    border: 1px solid red;
-    border-radius: 10px;
-    flex-shrink: 0;
-}
-
-.cart-grand-total  {
-    margin: 0;
-    font-size: 1.85rem;
-    font-weight: 600;
-    color: #5D4037;
-}
-
-.cart-grand-total #cartTotal {
-    color: #E67E22;
-    font-size: 1.85rem;
-    font-weight: 700;
-    /* margin-left: 5px; */
-}
-/* =================================================
-   CHECKOUT BUTTON
-================================================= */
-/* =================================================
-   CART ACTION BUTTONS
-================================================= */
-
-#checkoutBtn,
-#clearCartBtn {
-    width: 100%;
-    border-radius: 9px;
-    cursor: pointer;
-    flex-shrink: 0;
-    transition: all 0.25s ease;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-}
-
-
-/* =================================================
-   PROCEED TO CHECKOUT
-================================================= */
-
-#checkoutBtn {
-    height: 38px;
-
-    margin: 4px 0 6px;
-
-    padding: 6px 12px;
-
-    border: none;
-
-    background: #E67E22;
-    color: #fff;
-
-    font-size: 1.65rem;
-    font-weight: 600;
-
-    box-shadow: 0 3px 8px rgba(230, 126, 34, 0.25);
-}
-
-#checkoutBtn:hover {
-    background: #D35400;
-
-    transform: translateY(-1px);
-
-    box-shadow: 0 5px 12px rgba(230, 126, 34, 0.30);
-}
-
-#checkoutBtn:active {
-    transform: translateY(0);
-}
-
-#checkoutBtn i {
-    font-size: 0.8rem;
-}
-
-#clearCartBtn {
-    height: 32px;
-
-    margin: 0 0 4px;
-
-    padding: 5px 12px;
-
-    border: 1px solid #D8CCC3;
-
-    border-radius: 8px;
-
-    background: #FAF7F4;
-    /* color: #777; */
-    color: red;
-
-    font-size: 1.65rem;
-    font-weight: 500;
-
-    cursor: pointer;
-
-    transition: all 0.25s ease;
-}
-
-
-#clearCartBtn:hover {
-    background: #FFF1EE;
-
-    border-color: #D9534F;
-
-    color: #C0392B;
-
-    transform: translateY(-1px);
-
-    box-shadow: 0 3px 8px rgba(217, 83, 79, 0.15);
-}
-
-
-#clearCartBtn:active {
-    transform: translateY(0);
-}
-
-
-#clearCartBtn i {
-    font-size: 1.65rem;
-}
-
-/* =================================================
-   MOBILE
-================================================= */
-
-@media (max-width: 600px) {
-
-    .cart-panel {
-        top: 60px;
-        right: 10px;
-        left: 10px;
-
-        width: auto;
-
-        height: calc(100vh - 70px);
-
-        padding: 12px;
-
-        border-radius: 14px;
-    }
-
 }
 
 #whatsappBtn {
@@ -808,7 +495,7 @@ SHOPPING CART
     font-weight: bold;
 
 }
-/* 
+
 #clearCartBtn {
 
     width: 100%;
@@ -842,7 +529,7 @@ SHOPPING CART
     color: white;
 
 }
- */
+
 /* ==========================================
    PRODUCT COUNT
 ========================================== */
@@ -925,16 +612,27 @@ Hide Cart
 }
 
 .remove-btn {
+
     margin-top: 10px;
+
     padding: 8px 14px;
+
     border: none;
+
     border-radius: 8px;
+
     background: #f5f5f5;
+
     color: #d32f2f;
+
     cursor: pointer;
+
     font-size: 14px;
+
     font-weight: 600;
+
     transition: .3s;
+
 }
 
 .remove-btn:hover {
@@ -1147,7 +845,7 @@ Floating Summary Card
 /*==========================================
 CHECKOUT BUTTON
 ==========================================*/
-/* 
+
 #checkoutBtn {
 
     width: 100%;
@@ -1190,7 +888,7 @@ CHECKOUT BUTTON
 
     transform: scale(.98);
 
-} */
+}
 
 /*==========================================
 CANCEL BUTTON

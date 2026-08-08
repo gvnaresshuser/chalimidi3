@@ -217,26 +217,27 @@ function renderCart() {
 
   cart.forEach((item) => {
     grandTotal += item.total;
- 
-       cartItems.innerHTML += `
-    <div class="cart-item">
-        <div class="cart-item-title">
-            <strong>${item.name}</strong>
-            <button
-                class="remove-btn"
-                onclick="removeFromCart(${item.id}, ${item.quantity})"
-                title="Remove item"
-                aria-label="Remove ${item.name}"
-            >
-                <i class="fa-solid fa-trash"></i>
-            </button>
-        </div>
-        <small>${item.quantityLabel}</small>
-        <div class="cart-item-price">
-            ₹${item.total}
-        </div>
-    </div>
-`;
+    cartItems.innerHTML += `
+            <div class="cart-item">
+                <strong>
+                    ${item.name}
+                </strong>
+                <small>
+                    ${item.quantityLabel}
+                </small>
+                <br>
+                ₹${item.total}
+                 <br>
+                <button
+    class="remove-btn"
+    onclick="removeFromCart(
+        ${item.id},
+        ${item.quantity}
+    )">
+    🗑 Remove
+</button>
+            </div>
+        `;
   });
 
   cartTotal.textContent = grandTotal;

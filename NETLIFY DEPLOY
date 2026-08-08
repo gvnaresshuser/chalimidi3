@@ -1,0 +1,17 @@
+Deploy to Netlify
+
+After the code is on GitHub:
+
+Log in to Netlify.
+Click Add new site → Import an existing project.
+Choose GitHub.
+Select chalimidi3.
+Since this is a static HTML/CSS/JS website:
+Build command: (leave blank)
+Publish directory: . (or leave as the root if prompted)
+Click Deploy site.
+
+Your website will be live in a minute or two, and every future git push will automatically trigger a new deployment on Netlify.
+
+https://chalimidi.netlify.app/
+https://app.netlify.com/projects/chalimidi/overview
